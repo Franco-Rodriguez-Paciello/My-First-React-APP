@@ -1,14 +1,15 @@
 import React,{Component} from "react";
+import PropTypes from 'prop-types';
 
-import './Task.css';
 
 class Task extends Component{
+
 
 styleCompleted (){
     return {
         fontSize: '20px',
         color: this.props.task.done ? 'gray' : 'black',
-        textDecoration: 'none'
+        textDecoration: this.props.task.done ? 'line-through':'none'
     }
 };
 
@@ -28,6 +29,11 @@ styleCompleted (){
         
     }
 }
+
+Task.propTypes = {
+    task: PropTypes.object.isRequired
+}
+
 
 
 const btnDelete ={
