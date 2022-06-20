@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 import tasks from './example/task.json';
+
+// Components
 import Tasks from './components/Tasks';
+import TaskForm from './components/TaskForm';
 
 class App extends Component{
   state = {
@@ -12,9 +15,8 @@ class App extends Component{
   
   render() {
     return <div>
-      {
+        <TaskForm/>
         <Tasks tasks ={this.state.tasks} />
-      }
     </div>
   }
 };
