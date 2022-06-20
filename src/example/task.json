@@ -3,18 +3,18 @@
         "id": 0,
         "title":"task one",
         "description":"lorem ipsum",
-        "done":"false"
+        "done": false
     },
     {
         "id": 1,
         "title":"task two",
         "description":"lorem ipsum",
-        "done":"false"
+        "done": true
     },
     {
         "id": 2,
         "title":"task tree",
         "description":"lorem ipsum",
-        "done":"false"
+        "done": false
     }
 ]
